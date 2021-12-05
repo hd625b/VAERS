@@ -14,7 +14,6 @@ get_state_data <- function(st) {
     arrange(state, vax_lot) %>%
     filter(state == st)
 }
-
 # Function for Color Palette for the Top 50 Plot ==============================
 symptom_palette <- function(n, ...) {
   hcl.colors(n, "reds", rev = TRUE, ...)
