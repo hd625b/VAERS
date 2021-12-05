@@ -58,6 +58,7 @@ v_vaccination_2021 <- fread(vaccine_2021,
                             na.strings = "NA", strip.white = TRUE,
                             blank.lines.skip = FALSE, fill = TRUE
 )
+
 v_data <- rbind(v_data_2020, v_data_2021)
 v_symptoms <- rbind(v_symptoms_2020, v_symptoms_2021)
 v_vaccination <- rbind(v_vaccination_2020, v_vaccination_2021)
